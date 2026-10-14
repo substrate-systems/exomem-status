@@ -1,0 +1,124 @@
+/* Exomem theme for Upptime's status site. Values from the locked tokens (dark): bg-base, bg-panel, fg-primary,
+   exo-border-card, exo-amber, fg-secondary. Up is amber (it is live); degraded and down are told apart by words
+   and by ink strength, never by hue alone. */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500&display=swap");
+:root {
+  --body-background-color: #0a0908;
+  --body-text-color: #ece9e2;
+  --card-background-color: #100e0c;
+  --nav-background-color: #0a0908;
+  --nav-border-bottom-color: rgba(236, 233, 226, 0.07);
+  --nav-current-border-bottom-color: #ffb000;
+  --card-border-color: rgba(236, 233, 226, 0.1);
+  --up-border-left-color: #ffb000;
+  --degraded-border-left-color: #a39e93;
+  --down-border-left-color: #ece9e2;
+  --down-background-color: #1a1815;
+  --tag-color: #0a0908;
+  --tag-up-background-color: #ffb000;
+  --tag-degraded-background-color: #a39e93;
+  --tag-down-background-color: #ece9e2;
+  --change-background-color: #a39e93;
+  --error-button-border-color: rgba(236, 233, 226, 0.34);
+  --error-button-background-color: transparent;
+  --error-button-color: #ece9e2;
+  --submit-button-border-color: #ece9e2;
+  --submit-button-background-color: #ece9e2;
+  --submit-button-color: #0a0908;
+  --graph-opacity: 0.9;
+  --graph-filter: grayscale(1) brightness(1.4);
+}
+html body {
+  font-family: Inter, system-ui, sans-serif;
+}
+html h1,
+html h2,
+html h3,
+html nav,
+html .tag,
+html code {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-weight: 500;
+}
+
+/* Keep the supplied wordmark at its drawn size and let navigation wrap on phones. */
+html nav .container,
+html nav .container ul {
+  flex-wrap: wrap;
+}
+html nav .logo {
+  min-height: 44px;
+}
+html nav .container .logo > img[src] {
+  width: auto;
+  height: 1.0625rem;
+  margin-right: 0;
+  border-radius: 0;
+}
+html nav .logo > div {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+html nav .container ul {
+  justify-content: flex-start;
+}
+html nav .container ul a {
+  padding: 0.75rem 0.5rem;
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+/* Upptime hides these radios; keep them in keyboard and screen-reader navigation. */
+html form.f.r input[type="radio"][name="d"] {
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+html form.f.r label[for][class] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  min-width: 44px;
+  justify-content: center;
+  margin-left: 0;
+}
+html a:focus-visible,
+html input:focus-visible + label {
+  outline: 2px solid var(--nav-current-border-bottom-color);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html .data {
+    transition: none;
+  }
+  /* Keep the static loading ring; hide Upptime's looping SVG segment. */
+  html .loading svg path {
+    display: none;
+  }
+}
+
+@media (forced-colors: active) {
+  html a:focus-visible,
+  html input:focus-visible + label {
+    outline-color: Highlight;
+  }
+  /* The external SVG has fixed ink; use its existing text label in system colors. */
+  html nav .container .logo > img[src] {
+    display: none;
+  }
+  html nav .logo > div {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip-path: none;
+  }
+}

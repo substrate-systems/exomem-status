@@ -1,0 +1,65 @@
+name: Exomem Pages
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - .upptimerc.yml
+      - assets/**
+      - renderer/**
+      - .github/workflows/exomem-pages.yml
+  pull_request:
+    paths:
+      - .upptimerc.yml
+      - assets/**
+      - renderer/**
+      - .github/workflows/exomem-pages.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: exomem-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      CYPRESS_INSTALL_BINARY: "0"
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: renderer/package-lock.json
+      - name: Install renderer
+        working-directory: renderer
+        run: npm ci
+      - name: Export renderer
+        working-directory: renderer
+        run: npm run export
+      - name: Copy public assets
+        run: cp -R assets/. renderer/__sapper__/export/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: renderer/__sapper__/export
+
+  deploy:
+    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
