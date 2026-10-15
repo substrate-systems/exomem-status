@@ -1,31 +1,61 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: substrate-systems
+repo: exomem-status
+secrets: []
+skipGeneratingWebsite: true
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Website and sign-in
+    url: https://substratesystems.io/exomem
+    icon: https://status.substratesystems.io/favicon.svg
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+  - name: Sign-in service
+    url: https://substratesystems.io/healthz
+    icon: https://status.substratesystems.io/favicon.svg
+    expectedStatusCodes: [200]
+    maxResponseTime: 3000
+    maxRedirects: 0
+  - name: Your Exomem
+    url: https://exomem.substratesystems.io/healthz
+    icon: https://status.substratesystems.io/favicon.svg
+    expectedStatusCodes: [200]
+    maxResponseTime: 3000
+    maxRedirects: 0
+  - name: Sign-in emails
+    url: https://substratesystems.io/healthz/email
+    maxRedirects: 0
+    icon: https://status.substratesystems.io/favicon.svg
+    expectedStatusCodes: [200]
+    maxResponseTime: 5000
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  responseTime: "0 23 * * *"
+  graphs: "0 0 * * *"
+  summary: "0 0 * * *"
+  staticSite: "0 1 * * *"
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.substratesystems.io
+  logoUrl: https://status.substratesystems.io/exomem-wordmark-initial.svg
+  logoHref: https://substratesystems.io/exomem
+  name: Exomem status
+  favicon: https://status.substratesystems.io/favicon-32.png
+  faviconSvg: https://status.substratesystems.io/favicon.svg
+  themeUrl: https://status.substratesystems.io/exomem-status.css
+  introTitle: Exomem status
+  introMessage: "Checks run every five minutes from outside our servers. GitHub Actions may delay a scheduled check. Missing measurements mean health is unknown."
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Paddle status (payments)
+      href: https://paddlestatus.com/
+    - title: Exomem
+      href: https://substratesystems.io/exomem
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  allSystemsOperational: "No open incidents are recorded."
+  errorTitle: Status details unavailable
+  errorIntro: "The latest status details could not be loaded. Service health is unknown."
+  errorText: "Try again in a few moments, or open the status repository for recorded checks and incidents."
+  footer: "[Recorded checks and incidents]($REPO) · Powered by [Upptime](https://upptime.js.org)"

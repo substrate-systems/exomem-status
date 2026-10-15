@@ -1,0 +1,4 @@
+renderer/node_modules/
+renderer/src/node_modules/
+renderer/src/data/config.json
+renderer/__sapper__/
