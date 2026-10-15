@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Website and sign-in",
+    "url": "https://substratesystems.io/exomem",
+    "icon": "https://status.substratesystems.io/favicon.svg",
+    "slug": "website-and-sign-in",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 228,
+    "timeDay": 228,
+    "timeWeek": 228,
+    "timeMonth": 228,
+    "timeYear": 228,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "Sign-in service",
+    "url": "https://substratesystems.io/healthz",
+    "icon": "https://status.substratesystems.io/favicon.svg",
+    "slug": "sign-in-service",
+    "status": "down",
+    "uptime": "28.92%",
+    "uptimeDay": "28.92%",
+    "uptimeWeek": "28.92%",
+    "uptimeMonth": "28.92%",
+    "uptimeYear": "28.92%",
+    "time": 367,
+    "timeDay": 367,
+    "timeWeek": 367,
+    "timeMonth": 367,
+    "timeYear": 367,
+    "dailyMinutesDown": {
+      "2026-10-15": 1
+    }
+  },
+  {
+    "name": "Your Exomem",
+    "url": "https://exomem.substratesystems.io/healthz",
+    "icon": "https://status.substratesystems.io/favicon.svg",
+    "slug": "your-exomem",
+    "status": "down",
+    "uptime": "39.06%",
+    "uptimeDay": "39.06%",
+    "uptimeWeek": "39.06%",
+    "uptimeMonth": "39.06%",
+    "uptimeYear": "39.06%",
+    "time": 413,
+    "timeDay": 413,
+    "timeWeek": 413,
+    "timeMonth": 413,
+    "timeYear": 413,
+    "dailyMinutesDown": {
+      "2026-10-15": 0
+    }
+  },
+  {
+    "name": "Sign-in emails",
+    "url": "https://substratesystems.io/healthz/email",
+    "icon": "https://status.substratesystems.io/favicon.svg",
+    "slug": "sign-in-emails",
+    "status": "down",
+    "uptime": "71.99%",
+    "uptimeDay": "71.99%",
+    "uptimeWeek": "71.99%",
+    "uptimeMonth": "71.99%",
+    "uptimeYear": "71.99%",
+    "time": 348,
+    "timeDay": 348,
+    "timeWeek": 348,
+    "timeMonth": 348,
+    "timeYear": 348,
+    "dailyMinutesDown": {
+      "2026-10-15": 0
+    }
+  }
+]
