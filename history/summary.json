@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 228,
-    "timeDay": 228,
-    "timeWeek": 228,
-    "timeMonth": 228,
-    "timeYear": 228,
+    "time": 520,
+    "timeDay": 520,
+    "timeWeek": 520,
+    "timeMonth": 520,
+    "timeYear": 520,
     "dailyMinutesDown": {}
   },
   {
@@ -23,18 +23,19 @@
     "icon": "https://status.substratesystems.io/favicon.svg",
     "slug": "sign-in-service",
     "status": "down",
-    "uptime": "28.92%",
-    "uptimeDay": "28.92%",
-    "uptimeWeek": "28.92%",
-    "uptimeMonth": "28.92%",
-    "uptimeYear": "28.92%",
-    "time": 367,
-    "timeDay": 367,
-    "timeWeek": 367,
-    "timeMonth": 367,
-    "timeYear": 367,
+    "uptime": "0.04%",
+    "uptimeDay": "0.04%",
+    "uptimeWeek": "0.04%",
+    "uptimeMonth": "0.04%",
+    "uptimeYear": "0.04%",
+    "time": 705,
+    "timeDay": 705,
+    "timeWeek": 705,
+    "timeMonth": 705,
+    "timeYear": 705,
     "dailyMinutesDown": {
-      "2026-10-15": 1
+      "2026-10-16": 201,
+      "2026-10-15": 339
     }
   },
   {
@@ -43,18 +44,19 @@
     "icon": "https://status.substratesystems.io/favicon.svg",
     "slug": "your-exomem",
     "status": "down",
-    "uptime": "39.06%",
-    "uptimeDay": "39.06%",
-    "uptimeWeek": "39.06%",
-    "uptimeMonth": "39.06%",
-    "uptimeYear": "39.06%",
-    "time": 413,
-    "timeDay": 413,
-    "timeWeek": 413,
-    "timeMonth": 413,
-    "timeYear": 413,
+    "uptime": "0.04%",
+    "uptimeDay": "0.04%",
+    "uptimeWeek": "0.04%",
+    "uptimeMonth": "0.04%",
+    "uptimeYear": "0.04%",
+    "time": 419,
+    "timeDay": 419,
+    "timeWeek": 419,
+    "timeMonth": 419,
+    "timeYear": 419,
     "dailyMinutesDown": {
-      "2026-10-15": 0
+      "2026-10-16": 201,
+      "2026-10-15": 338
     }
   },
   {
@@ -63,18 +65,19 @@
     "icon": "https://status.substratesystems.io/favicon.svg",
     "slug": "sign-in-emails",
     "status": "down",
-    "uptime": "71.99%",
-    "uptimeDay": "71.99%",
-    "uptimeWeek": "71.99%",
-    "uptimeMonth": "71.99%",
-    "uptimeYear": "71.99%",
-    "time": 348,
-    "timeDay": 348,
-    "timeWeek": 348,
-    "timeMonth": 348,
-    "timeYear": 348,
+    "uptime": "0.04%",
+    "uptimeDay": "0.04%",
+    "uptimeWeek": "0.04%",
+    "uptimeMonth": "0.04%",
+    "uptimeYear": "0.04%",
+    "time": 340,
+    "timeDay": 340,
+    "timeWeek": 340,
+    "timeMonth": 340,
+    "timeYear": 340,
     "dailyMinutesDown": {
-      "2026-10-15": 0
+      "2026-10-16": 201,
+      "2026-10-15": 338
     }
   }
 ]
