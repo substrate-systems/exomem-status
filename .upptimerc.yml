@@ -9,24 +9,6 @@ sites:
     icon: https://status.substratesystems.io/favicon.svg
     expectedStatusCodes: [200]
     maxResponseTime: 5000
-  - name: Sign-in service
-    url: https://substratesystems.io/healthz
-    icon: https://status.substratesystems.io/favicon.svg
-    expectedStatusCodes: [200]
-    maxResponseTime: 3000
-    maxRedirects: 0
-  - name: Your Exomem
-    url: https://exomem.substratesystems.io/healthz
-    icon: https://status.substratesystems.io/favicon.svg
-    expectedStatusCodes: [200]
-    maxResponseTime: 3000
-    maxRedirects: 0
-  - name: Sign-in emails
-    url: https://substratesystems.io/healthz/email
-    maxRedirects: 0
-    icon: https://status.substratesystems.io/favicon.svg
-    expectedStatusCodes: [200]
-    maxResponseTime: 5000
 
 workflowSchedule:
   uptime: "*/5 * * * *"
