@@ -19,7 +19,7 @@ workflowSchedule:
 
 status-website:
   cname: status.substratesystems.io
-  logoUrl: https://status.substratesystems.io/exomem-wordmark-initial.svg
+  logoUrl: https://status.substratesystems.io/evermatter-wordmark-initial.png
   logoHref: https://substratesystems.io/exomem
   name: Evermatter status
   favicon: https://status.substratesystems.io/favicon-32.png
