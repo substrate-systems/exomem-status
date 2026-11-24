@@ -110,7 +110,7 @@ html input:focus-visible + label {
   html input:focus-visible + label {
     outline-color: Highlight;
   }
-  /* The external SVG has fixed ink; use its existing text label in system colors. */
+  /* The wordmark image has fixed ink; use its existing text label in system colors. */
   html nav .container .logo > img[src] {
     display: none;
   }

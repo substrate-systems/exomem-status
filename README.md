@@ -56,7 +56,7 @@ Do not restore the unsanitized upstream incident renderer as a rollback.
 ## Operation
 
 The `.upptimerc.yml` file owns the endpoints, schedules, site branding, and contextual secret allowlist.
-The `assets/` directory holds the public brand files and dark theme.
+The `assets/` directory holds the public brand files and dark theme. The wordmark (`evermatter-wordmark-initial.png`) and favicons are copies of the Evermatter brand kit in substrate-systems/substrate, `public/evermatter/` (email/wordmark-dark.png and icons/), at commit 45d74d57; copy them again when the kit changes. They are copied rather than linked so this page does not depend on the site it monitors.
 Upptime owns these eight generated workflows: `graphs.yml`, `response-time.yml`, `setup.yml`, `site.yml`,
 `summary.yml`, `update-template.yml`, `updates.yml`, and `uptime.yml`.
 Regenerate them through the maintained template command after a configuration change; do not edit their files.

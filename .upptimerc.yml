@@ -32,8 +32,6 @@ status-website:
       href: /
     - title: Paddle status (payments)
       href: https://paddlestatus.com/
-    - title: Evermatter
-      href: https://substratesystems.io/exomem
 
 i18n:
   allSystemsOperational: "No open incidents are recorded."
