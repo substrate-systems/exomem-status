@@ -1,6 +1,6 @@
-# Exomem status
+# Evermatter status
 
-[Exomem status](https://status.substratesystems.io) reports public checks from outside the application servers.
+[Evermatter status](https://status.substratesystems.io) reports public checks from outside the application servers.
 [Upptime](https://upptime.js.org) runs the checks through GitHub Actions and publishes the site through GitHub Pages.
 The repository uses the Upptime 1.46.0 template under its original MIT license.
 
@@ -11,7 +11,7 @@ The repository uses the Upptime 1.46.0 template under its original MIT license.
 | Website and sign-in | `https://substratesystems.io/exomem` | The product website loads. |
 
 The check requires HTTP 200.
-Checks of the sign-in service, each hosted Exomem and sign-in emails return when their scheduled health jobs run in production. Each one must then return 200 only when its functional check succeeds.
+Checks of the sign-in service, each hosted Evermatter and sign-in emails return when their scheduled health jobs run in production. Each one must then return 200 only when its functional check succeeds.
 Payments link to [Paddle status](https://paddlestatus.com/) and have no local probe.
 
 ## Recorded status
