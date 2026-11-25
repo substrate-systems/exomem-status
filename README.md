@@ -1,6 +1,6 @@
-# Exomem status
+# Evermatter status
 
-[Exomem status](https://status.substratesystems.io) reports public checks from outside the application servers.
+[Evermatter status](https://status.substratesystems.io) reports public checks from outside the application servers.
 [Upptime](https://upptime.js.org) runs the checks through GitHub Actions and publishes the site through GitHub Pages.
 The repository uses the Upptime 1.46.0 template under its original MIT license.
 
@@ -11,7 +11,7 @@ The repository uses the Upptime 1.46.0 template under its original MIT license.
 | Website and sign-in | `https://substratesystems.io/exomem` | The product website loads. |
 
 The check requires HTTP 200.
-Checks of the sign-in service, each hosted Exomem and sign-in emails return when their scheduled health jobs run in production. Each one must then return 200 only when its functional check succeeds.
+Checks of the sign-in service, each hosted Evermatter and sign-in emails return when their scheduled health jobs run in production. Each one must then return 200 only when its functional check succeeds.
 Payments link to [Paddle status](https://paddlestatus.com/) and have no local probe.
 
 ## Recorded status
@@ -56,7 +56,7 @@ Do not restore the unsanitized upstream incident renderer as a rollback.
 ## Operation
 
 The `.upptimerc.yml` file owns the endpoints, schedules, site branding, and contextual secret allowlist.
-The `assets/` directory holds the public brand files and dark theme.
+The `assets/` directory holds the public brand files and dark theme. The wordmark (`evermatter-wordmark-initial.png`) and favicons are copies of the Evermatter brand kit in substrate-systems/substrate, `public/evermatter/` (email/wordmark-dark.png and icons/), at commit 45d74d57; copy them again when the kit changes. They are copied rather than linked so this page does not depend on the site it monitors.
 Upptime owns these eight generated workflows: `graphs.yml`, `response-time.yml`, `setup.yml`, `site.yml`,
 `summary.yml`, `update-template.yml`, `updates.yml`, and `uptime.yml`.
 Regenerate them through the maintained template command after a configuration change; do not edit their files.

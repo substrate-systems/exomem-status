@@ -19,21 +19,19 @@ workflowSchedule:
 
 status-website:
   cname: status.substratesystems.io
-  logoUrl: https://status.substratesystems.io/exomem-wordmark-initial.svg
+  logoUrl: https://status.substratesystems.io/evermatter-wordmark-initial.png
   logoHref: https://substratesystems.io/exomem
-  name: Exomem status
+  name: Evermatter status
   favicon: https://status.substratesystems.io/favicon-32.png
   faviconSvg: https://status.substratesystems.io/favicon.svg
   themeUrl: https://status.substratesystems.io/exomem-status.css
-  introTitle: Exomem status
+  introTitle: Evermatter status
   introMessage: "Checks run every five minutes from outside our servers. GitHub Actions may delay a scheduled check. Missing measurements mean health is unknown."
   navbar:
     - title: Status
       href: /
     - title: Paddle status (payments)
       href: https://paddlestatus.com/
-    - title: Exomem
-      href: https://substratesystems.io/exomem
 
 i18n:
   allSystemsOperational: "No open incidents are recorded."
